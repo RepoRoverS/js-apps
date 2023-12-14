@@ -1,15 +1,49 @@
 'use strict';
 
+const numberOfFilms = +prompt('Сколько фильмов вы посмотрели?', '');
+
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+
+};
+
+const lastWatchedMovie = prompt('Один из последних просмотренных фильмов?', ''),
+	howYouRate = +prompt('На сколько оцените его?', '');
 
 
+// Задание на урок:
 
+// 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+// 'Сколько фильмов вы уже посмотрели?'
+
+// 2) Создать объект personalMovieDB и в него поместить такие свойства:
+//     - count - сюда передается ответ на первый вопрос
+//     - movies - в это свойство поместить пустой объект
+//     - actors - тоже поместить пустой объект
+//     - genres - сюда поместить пустой массив
+//     - privat - в это свойство поместить boolean(логическое) значение false
+
+// 3) Задайте пользователю по два раза вопросы:
+//     - 'Один из последних просмотренных фильмов?'
+//     - 'На сколько оцените его?'
+// Ответы стоит поместить в отдельные переменные
+// Записать ответы в объект movies в формате:
+//     movies: {
+//         'logan': '8.1'
+//     }
+
+// Проверить, чтобы все работало без ошибок в консоли
 
 // console.log('arr' + '- object');
 // console.log(4 + +'5');
 
 // let incr = 10,
 // 	decr = 10;
-    
+
 // incr++;
 // decr--;
 
@@ -24,8 +58,6 @@
 
 // console.log(isChecked || !isClose);
 
-
-
 //==================//
 // && оператор "і"
 // || оператор "або"
@@ -38,19 +70,14 @@
 
 // alert(`Hello, ${user}`);
 
-
-
 // =========================================//
 // // const result = confirm('Are you here?');
 
 // // console.log(result);
 
+// const answer = prompt('have you got 18?', '18');
 
-// const answer = prompt('have you got 18?', '18'); 
-
-// // console.log((+answer + 5)); 
-
-
+// // console.log((+answer + 5));
 
 // const answers = [];
 
@@ -104,4 +131,3 @@
 
 // let arr = ['plum.png', 'orange.jpg', 'apple.bmp', 6, {}, []];
 // console.log(arr[2]);
-
