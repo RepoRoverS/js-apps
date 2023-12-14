@@ -11,9 +11,16 @@ const personalMovieDB = {
 
 };
 
-const lastWatchedMovie = prompt('Один из последних просмотренных фильмов?', ''),
-	howYouRate = +prompt('На сколько оцените его?', '');
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+	b = prompt('На сколько оцените его?', ''),
+	с = prompt('Один из последних просмотренных фильмов?', ''),
+	d = prompt('На сколько оцените его?', '');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[с] = d;
+
+
+console.log(personalMovieDB);
 
 // Задание на урок:
 
